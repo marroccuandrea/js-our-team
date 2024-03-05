@@ -40,3 +40,9 @@ const impiegati = [
     }
     
 ]
+
+// Stampo in console i dati di ogni impiegato
+
+for(let impiegato of impiegati){
+    console.log(impiegato);
+}
