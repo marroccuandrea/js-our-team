@@ -41,8 +41,21 @@ const impiegati = [
     
 ]
 
-// Stampo in console i dati di ogni impiegato
 
 for(let impiegato of impiegati){
+    // Stampo in console i dati di ogni impiegato
     console.log(impiegato);
+    output.innerHTML += `
+    <div class="col">
+        <div class="card my-3" ">
+            <img src="img/${impiegato.img}" class="card-img-top" alt="${impiegato.nome}">
+          <div class="card-body">
+            <h5 class="card-title text-center">${impiegato.nome} ${impiegato.cognome}</h5>
+            <h6 class="text-center">
+              ${impiegato.ruolo}
+            </h6>
+          </div>
+        </div>
+  </div>
+    `
 }
